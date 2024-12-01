@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hotel Reservation Form</title>
+  <link rel="stylesheet" href="/styles/reservation.css">
+
+</head>
+<body>
+
+  <div id="navbar-container"></div>
+  <div class="container">
+    <h1>Hotel Reservation Form</h1>
+    <form id="reservation-form">
+      <!-- Full Name -->
+      <label for="name">Full Name</label>
+      <input type="text" id="name" name="name" placeholder="Enter your full name">
+      
+      <!-- Email Address -->
+      <label for="email">Email Address</label>
+      <input type="email" id="email" name="email" placeholder="Enter your email address">
+      
+      <!-- Phone Number -->
+      <label for="phone">Phone Number</label>
+      <input type="tel" id="phone" name="phone" placeholder="Enter your phone number">
+      
+      <!-- Check-in Date -->
+      <label for="checkin">Check-in Date</label>
+      <input type="date" id="checkin" name="checkin">
+      
+      <!-- Check-out Date -->
+      <label for="checkout">Check-out Date</label>
+      <input type="date" id="checkout" name="checkout">
+      
+      <!-- Number of Guests -->
+      <label for="guests">Number of Guests</label>
+      <input type="number" id="guests" name="guests" min="1" max="20" placeholder="Enter number of guests">
+      
+      <!-- Room Type -->
+      <label for="room">Room Type</label>
+      <select id="room" name="room">
+        <option value="">-- Select Room Type --</option>
+        <option value="single">Single</option>
+        <option value="double">Double</option>
+        <option value="suite">Suite</option>
+      </select>
+      
+      <!-- Special Requests -->
+      <label for="requests">Special Requests</label>
+      <textarea id="requests" name="requests" rows="4" placeholder="Enter any special requests"></textarea>
+      
+      <!-- Payment Method -->
+      <label for="payment">Payment Method</label>
+      <select id="payment" name="payment">
+        <option value="">-- Select Payment Method --</option>
+        <option value="credit_card">Credit Card</option>
+        <option value="cash">Cash</option>
+        <option value="online">Online Payment</option>
+        <option value="upi">UPI</option>
+      </select>
+      
+      <!-- Buttons -->
+      <div class="button-container">
+        <button 
+          type="button" 
+          id="submit-btn" 
+          onclick="validateForm()" 
+          onmouseover="handleMouseOver()">
+          Submit Reservation
+        </button>
+        <button 
+          type="reset" 
+          id="reset-btn">
+          Reset
+        </button>
+      </div>
+    </form>
+  </div>
+
+  <script src="/scripts/navbar.js"></script>
+  <script src="/scripts/validation.js"></script>
+     <script src="/scripts/events.js"></script>
+</body>
+</html>

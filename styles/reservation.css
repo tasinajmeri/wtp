@@ -1,0 +1,111 @@
+/* General Body Styling */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f8f9fa;
+}
+
+/* Form Container Styling */
+.container {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Title Styling */
+h1 {
+  text-align: center;
+  color: #963b68; /* Secondary Background Color */
+  margin-bottom: 20px;
+}
+
+/* Label Styling */
+label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: #963b68; /* Secondary Background Color */
+}
+
+/* Input, Select, and Textarea Styling */
+input, select, textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border:1px solid #ced4da;
+  transition: border-color 0.3s ease;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+textarea {
+  resize: none;
+  background-color: #f8f9fa;
+  border: 1px solid #ced4da;
+}
+
+/* Button Container */
+.button-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Submit Button Styling */
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  border: none;
+}
+
+#submit-btn {
+  background-color: #287f71; /* Primary Background Color */
+  color: #fff;
+}
+
+#submit-btn:hover {
+  background-color: #247266; /* Primary Hover Color */
+}
+
+/* Reset Button Styling */
+#reset-btn {
+  background-color: #963b68; /* Secondary Background Color */
+  color: #fff;
+}
+
+#reset-btn:hover {
+  background-color: #87355e; /* Secondary Hover Color */
+}
+
+/* Responsive Design for Mobile Devices */
+@media (max-width: 768px) {
+  .container {
+    padding: 15px;
+    margin: 20px auto;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  input, select, textarea, button {
+    font-size: 14px;
+    padding: 8px;
+  }
+
+  .button-container {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  button {
+    width: 100%;
+  }
+}

@@ -1,0 +1,36 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #247266;
+  padding: 10px 20px;
+  color: white;
+}
+
+.navbar .logo {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.navbar .links {
+  display: flex;
+}
+
+.navbar .links a {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  margin: 0 10px;
+  transition: color 0.3s;
+}
+
+.navbar .links a:hover {
+  color: #ffcccb; /* Light pink on hover */
+}
+                                                                
